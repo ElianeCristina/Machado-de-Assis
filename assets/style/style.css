@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: url(../img/Machadianas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 30rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: #b6babe;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+
+.pesquisa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-left: 30rem;
+}
+
+.pesquisa input{
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #45474B;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+button{
+padding: 0.8rem 1.2rem;
+border: none;
+border-radius: 1.5rem;
+background-color: #30475E;
+color: #F5F7F8;
+font-size: 1rem;
+cursor: pointer;
+}
+
+button:hover {
+    background-color: #30475E;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+p{
+    color: #b6babe;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.resultados-pesquisa {
+    width: 50rem;
+    height: 55vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    margin-left: 30rem;
+}
+
+.item-resultado {
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-resultado h2 {
+    font-size: 1.5rem; 
+    color: #222831;
+}
+
+.item-resultado a {
+    text-decoration: none;
+    color: #30475E;
+}
+
+.item-resultado a:hover {
+    text-decoration: underline;
+}
+
+.descricao{
+    color: #45474B;
+    margin: 0.5rem 0;
+}
+
+.rodape {
+    color: #b6babe;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1rem;
+    margin-left: 15rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .pesquisa input {
+        width: 25rem;
+        padding: 0.8rem;
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        height: 40vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .pesquisa input {
+        width: 17rem;
+    }
+
+    button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
